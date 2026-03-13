@@ -1,0 +1,4 @@
+interface:
+  display_name: "Spec Document Reviewer"
+  short_description: "Review specs before planning and build"
+  default_prompt: "Use $spec-document-reviewer to review this spec for planning readiness and list blocking issues."
