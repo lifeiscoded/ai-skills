@@ -1,0 +1,23 @@
+{
+  "skill_name": "token-balanced-docs",
+  "evals": [
+    {
+      "id": 0,
+      "prompt": "Document the signatureEngine.ts file in the backend. It handles placeholder replacement logic for email signatures. Add JSDoc to all exported functions and module-level comments.",
+      "expected_output": "signatureEngine.ts with JSDoc on all exported functions including @param, @returns, @throws, and @example tags. Module-level comment explaining the file's purpose. Inline comments only for non-obvious logic.",
+      "files": ["backend/src/services/signatureEngine.ts"]
+    },
+    {
+      "id": 1,
+      "prompt": "Write a README for the outlook-addin directory. It's an Outlook Web Add-in built with Vite and TypeScript that injects email signatures client-side.",
+      "expected_output": "README.md with: project name + summary, why section, prerequisites (Node, Vite, Office Add-in manifest), quickstart steps, configuration (env vars, manifest.xml), usage example, and project structure.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Update the API spec for the /api/rules endpoints. There are 6 endpoints: GET list, POST create, GET by id, PATCH update, DELETE, and PATCH reorder. Document all of them with request/response schemas and error codes.",
+      "expected_output": "API documentation for all 6 /api/rules endpoints with: HTTP method + path, description, auth requirements, request body schema, response 200 schema, and error codes (400/401/404). Includes a curl example for at least the POST create endpoint.",
+      "files": []
+    }
+  ]
+}
